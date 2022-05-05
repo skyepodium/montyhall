@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>    
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">몬티홀</h1>
+    <div id="container">
+        <div class="door" data-id="0"></div>
+        <div class="door" data-id="1"></div>
+        <div class="door" data-id="2"></div>
+    </div>
+    <div id="board">
+        <div class="contents">횟수: <span id="totalCnt">0</span></div>
+        <div class="contents">성공 확률: <span id="winRate">0%</span></div>
+        <div class="contents">실패 확률: <span id="loseRate">0%</span></div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';            
+        }
+        #title {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 70px;
+            font-weight: 600;
+            display: block;
+            background: linear-gradient(to right top, #44a1f8, rgb(129, 120, 190));
+            color: transparent;
+            -webkit-background-clip: text;            
+        }
+        #container {
+            margin-top: 50px;
+            width: 1000px;
+            height: 500px;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #ececec;
+            display: flex;            
+        }
+
+        .door {
+            width: 300px;
+            margin: 30px;
+            background-color: #fff;
+            border: 2px solid #ececec;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgb(206, 200, 200);   
+            transition: 0.3s;
+            cursor: pointer;            
+        }
+
+        .door:hover {
+            /* background-color: #FFCCCC; */
+            background-color: #44a1f8;
+        }
+
+        #board {
+            margin-top: 20px;
+            width: 1000px;
+            height: 100px;
+            margin-left:auto;
+            margin-right:auto;
+            display: flex;            
+        }
+        .contents {
+            width: 300px;
+            margin: 30px;
+            text-align:  100px;
+            background-color: #fff;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+        #area {
+            margin-top: 10px;
+            width: 600px;
+            height: 100px;
+            margin-left:auto;
+            margin-right:auto;
+            display: flex;        
+        }
+
+        .close {
+            background-color:#5ed3ac;
+        }
+        .close:hover {
+            background-color: #5ed3ac;
+        }
+
+        .pick {
+            border-color: #44a1f8;
+        }
+    </style>
+    <script src="./index.js"></script>
+</body>
+</html>
