@@ -59,7 +59,7 @@ const updateChart = (a, b, c, d) => {
     chart.update()    
 }
 
-const maxInt = 10000
+const maxInt = 100000
 
 let changeWinCnt = 0
 let changeLoseCnt = 0
